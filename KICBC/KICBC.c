@@ -101,9 +101,14 @@ int main() {
             divide(memory, operand, &accumulatorRegister);
             break;
         case BRANCH:
-            branch(&memoryTracker,operand);
+            branch(&memoryTracker,operand,&accumulatorRegister);
             break;
-
+        case BRANCHNEG:
+            branchNeg(&memoryTracker,operand,&accumulatorRegister);
+            break;
+        case BRANCHZERO:
+            branchZero(&memoryTracker, operand, &accumulatorRegister);
+            break;
 
         case HALT:
             halt();

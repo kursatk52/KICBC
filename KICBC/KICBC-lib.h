@@ -63,6 +63,19 @@ int branch(int* memTracker, int location) {
     return 0;
 }
 
+int branchNeg(int* memTracker,int location,int* accum) {
+    if (*accum < 0)
+        *memTracker = location;
+    return 0;
+}
+
+int branchZero(int* memTracker, int location, int* accum) {
+    if (*accum == 0)
+        *memTracker = location;
+    return 0;
+}
+
+
 
 // Dumps all memory and show to user.
 int dumpMemory(const int mem[]) {
