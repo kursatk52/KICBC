@@ -34,7 +34,7 @@ int main() {
 
     printHeader();
 
-    int memory[MEMSIZE] = { 0 };
+    int memory[MEMSIZE] = { 0 }; //Adresses between 0 to 99
 
 
     int accumulatorRegister = 0000; //Accumulator Register
@@ -88,8 +88,21 @@ int main() {
         case STORE:
             store(memory, operand, &accumulatorRegister);
             break;
-
-
+        case ADD:
+            add(memory,operand,&accumulatorRegister);
+            break;
+        case SUBTRACT:
+            substract(memory, operand, &accumulatorRegister);
+            break;
+        case MULTIPLY:
+            multiply(memory, operand, &accumulatorRegister);
+            break;
+        case DIVIDE:
+            divide(memory, operand, &accumulatorRegister);
+            break;
+        case BRANCH:
+            branch(&memoryTracker,operand);
+            break;
 
 
         case HALT:

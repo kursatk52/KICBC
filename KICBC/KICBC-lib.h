@@ -41,8 +41,27 @@ int store(int *mem, int index, int *acum) {
     return 0;
 }
 
+int add(int *mem,int index,int *acum) {
+    *acum += *(mem + index);
+    return 0;
+}
+int substract(int* mem, int index, int* acum) {
+    *acum -= *(mem + index);
+    return 0;
+}
+int divide(int* mem, int index, int* acum) {
+    *acum /= *(mem + index);
+    return 0;
+}
+int multiply(int* mem, int index, int* acum) {
+    *acum *= *(mem + index);
+    return 0;
+}
 
-
+int branch(int* memTracker, int location) {
+    *memTracker = location;
+    return 0;
+}
 
 
 // Dumps all memory and show to user.
