@@ -5,7 +5,9 @@
 #include "KICBC-opts.h"
 #include "KICBC-hware.h"
 
-
+/*
+Author: Kürþat (kursatk52) KORKMAZ
+*/
 
 
 #define SENTINEL -99999
