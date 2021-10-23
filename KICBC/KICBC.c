@@ -11,16 +11,6 @@
 #define SENTINEL -99999
 //#define DEBUG  // By defining DEBUG, some codes will be active for some extra featrues.
 
-/*
-TODO: Created new header files for organization.
-TODO: Changed the Register Names. 
-TODO: Controlled sourced code for bugs
-TODO: Added new function (resetIPLoc,)
-TODO: Revised all functions and performed appropriate changing.
-TODO: Fixed some bugs such as working wrong
-TOOD: Fixed branch-flow-error
-*/
-
 
 
 int main() {
